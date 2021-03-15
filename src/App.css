@@ -2,3 +2,70 @@
   height: 100vh;
   background-color: #e9e9e9;
 }
+
+.container {
+  background-color: #e9e9e9;
+  height: 100vh;
+  padding: 5%;
+}
+
+/* after 속성 : 요소의 마지막에 의사요소(가상요소)를 추가. 
+CSS 의사 요소(가상 요소) : 선택자에 추가하는 키워드로, 선택한 요소의 일부분에만 스타일을 입힐 수 있습니다. 
+참고: https://developer.mozilla.org/ko/docs/Web/CSS/::after
+*/
+.balloon_01 {
+  position: relative;
+  margin: 0 50px;
+  width: 400px;
+  height: 100px;
+  background: pink;
+  border-radius: 10px;
+}
+.balloon_01:after {
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid pink;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 200px;
+}
+
+.balloon_02 {
+  position: relative;
+  margin: 50px;
+  width: 400px;
+  height: 100px;
+  background: blue;
+  border-radius: 10px;
+}
+.balloon_02:after {
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid blue;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 200px;
+}
+
+.balloon_03 {
+  position: relative;
+  margin: 50px;
+  width: 400px;
+  height: 100px;
+  background: #333333;
+  border-radius: 10px;
+}
+.balloon_03:after {
+  border-top: 15px solid #333333;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -15px;
+}
