@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react'
 import "./App.css";
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import PercentGraph from './percent_graph/percent.graph'
 
 function App() {
   useEffect(() => {
@@ -7,12 +9,14 @@ function App() {
   }, [])
   
   return (
+    
     <div className="App">
-      <div className="container">
-        <div className="balloon_01"></div>
-        <div className="balloon_02"></div>
-        <div className="balloon_03"></div>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/percent_graph" render={PercentGraph} />
+        </Switch>
+        
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.graph {
+    display: flex;
+    width: 100%;
+
+}
+
+.graph div{
+    min-height: 50px;
+}
