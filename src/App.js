@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import PercentGraph from "./percent_graph/percent.graph";
 import WriteForm from "./write_form/write_form";
 import ReactSelectExample from './react_select/react.select'
+import Form from "./form/form";
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/percent_graph" render={PercentGraph} />
             <Route path="/write_form" render={WriteForm} />
             <Route path="/react_select" render={ReactSelectExample} />
+            <Route path="/form" render={Form} />
           </Switch>
         </div>
       </BrowserRouter>

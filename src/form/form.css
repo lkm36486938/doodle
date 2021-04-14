@@ -1,0 +1,44 @@
+.form_container {
+  background-color: white;
+  height: 100%;
+  padding-top: 50px;
+  position: relative;
+}
+
+.form_add_button {
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  background-color: plum;
+  line-height: 64px;
+  color: white;
+  text-align: center;
+  margin-left: 32px;
+  font-size: 32px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.form_add_button.pop {
+  background-color: saddlebrown;
+}
+
+.form_submit {
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  font-size: 16px;
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  bottom: 150px;
+  right: 150px;
+}
+
+.form_add_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
