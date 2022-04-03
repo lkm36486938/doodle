@@ -10,6 +10,7 @@ import WithUseRef from "./렌더링퍼포먼스_개선/useRef를사용한개선/
 import Candy from "./렌더링퍼포먼스_개선/useCallback을 사용한 개선/candy";
 import Antd from "./antd/antd";
 import dataHandling from "./data_handling/data.handling";
+import Another from "./렌더링퍼포먼스_개선/another_example/another";
 
 function App() {
     useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
                             render={dataHandling}
                             exact
                         />
+                        <Route path="/another" render={Another} exact />
                     </Switch>
                 </div>
             </BrowserRouter>
